@@ -1,0 +1,50 @@
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #d8b4fe;
+  --accent: #a855f7;
+  --accent-strong: #c084fc;
+  --glow: 0 0 24px rgba(168, 85, 247, 0.55);
+  --sans: 'Inter', system-ui, 'Segoe UI', sans-serif;
+  --heading: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --logo: 'Outfit', var(--sans);
+  --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
