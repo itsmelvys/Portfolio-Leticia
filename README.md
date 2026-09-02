@@ -1,16 +1,38 @@
-# React + Vite
+# Portfólio da Letícia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site pessoal de front-end. Por enquanto o que está pronto é a tela inicial: tema escuro, um pouco de espaço, a apresentação e o retrato.
 
-Currently, two official plugins are available:
+As outras partes do menu (Sobre, Projetos, Tecnologias e Contato) já têm âncora, mas ainda estão vazias. Vou preenchendo conforme os projetos forem saindo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Como rodar
 
-## React Compiler
+Precisa do Node instalado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+O Vite sobe um servidor local (geralmente `http://localhost:5173`). `npm run build` gera a pasta `dist` se quiser publicar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Foto
+
+A imagem do hero fica em `src/assets/portrait.jpg`. Se trocar o arquivo, mantém o nome pra não quebrar o import.
+
+## Stack
+
+React e Vite. CSS na mão, sem framework de UI. Fontes do Google: Barlow Condensed no título, Inter no texto, Outfit na logo e JetBrains Mono na tag de desenvolvedora.
+
+## Estrutura
+
+```
+src/
+  App.jsx
+  components/
+    Header.jsx
+    Hero.jsx
+    HeroPortrait.jsx
+    SpaceBackground.jsx
+```
+
+Nada muito complexo: o `App` monta o fundo, o header e o hero. O resto das seções entra no mesmo arquivo quando existir conteúdo de verdade.
